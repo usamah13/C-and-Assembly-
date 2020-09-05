@@ -1,0 +1,47 @@
+All reading are the min after three runs\
+
+
+time ./sRead 10
+163
+
+real	0m0.114s
+user	0m0.110s
+sys	0m0.004s
+
+time ./sRead 100
+1468
+
+real	0m1.103s
+user	0m1.101s
+sys	0m0.001s
+
+time ./sRead 1000
+14518
+
+real	0m10.999s
+user	0m10.996s
+sys	0m0.001s
+
+./aRead 10
+163
+
+real	0m0.015s
+user	0m0.014s
+sys	0m0.001s
+
+
+./aRead 100
+1468
+
+real	0m0.015s
+user	0m0.010s
+sys	0m0.005s
+
+./aRead 1000
+14518
+
+real	0m0.015s
+user	0m0.014s
+sys	0m0.001s
+
+We can observe that the sRead read's blocks slower that aRead algorithm for almost all the cases. Thats because the sRead schedule a read and waits for it, it's working synchronously in a way so it has to wait for each read to complete before proceeding, thats why it takes more overall time to complete all the reads. While the aRead, schedules all the reads asynchronously, it schedules all the reads and just wait for all of them to finish once(not like sRead), and while waiting it just keeps updating the sum whenever an interrupt is called.

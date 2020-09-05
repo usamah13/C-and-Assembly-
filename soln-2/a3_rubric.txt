@@ -1,0 +1,36 @@
+q1 [10]
+	+2 correct value of i
+	+2 correct value of j
+	+2 correct value or p
+	+2 correct value set in a
+	+2 correct values of other parts of a
+
+q2 [10]
+	+2 correct value of array a
+	+6 correct value of array s
+	+1 correct value of tmp
+	+1 correct value of tos
+
+a3 [14]
+	+2 correct value of a
+	+2 correct value of p
+	+2 correct value of b[0]
+	+2 correct value of b[1]
+	+2 correct value of b[2]
+	+2 correct value of b[3]
+	+2 correct value of b[4]
+
+q4 [10]
+	+10 correct answer
+
+q5 [10]
+	+10 correct answer
+
+q6 [10]
+	+10 correct answer
+
+cAryD [10]
+	+10 uses dynamic arrays and produces correct output
+
+CAryA [10]
+	+10 uses pointers only and correctly and produces correct output

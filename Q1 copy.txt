@@ -1,0 +1,24 @@
+$time ./sRead 10
+> 163
+> ./sRead 10  0.10s user 0.01s system 94% cpu 0.111 total
+
+$time ./sRead 100
+> 1468
+> ./sRead 100  1.08s user 0.01s system 99% cpu 1.090 total
+
+$time ./sRead 1000
+> 14518
+> ./sRead 1000  10.35s user 0.14s system 97% cpu 10.732 total
+
+➜  code git:(master) ✗ gtime ./sRead 10
+163
+0:00.10 elapsed
+➜  code git:(master) ✗ gtime ./sRead 100
+1468
+0:01.08 elapsed
+➜  code git:(master) ✗ gtime ./sRead 1000
+14518
+0:10.77 elapsed
+
+Time elapsed is directly proportional to the number of blocks read. This is because
+disk_schedule_read's are ran in sequence, not parallel, i.e. we reach one block at a time.

@@ -1,0 +1,46 @@
+./aRead 10
+163
+
+real	0m0.015s
+user	0m0.014s
+sys	0m0.001s
+
+
+./aRead 100
+1468
+
+real	0m0.015s
+user	0m0.010s
+sys	0m0.005s
+
+./aRead 1000
+14518
+
+real	0m0.015s
+user	0m0.014s
+sys	0m0.001s
+
+
+time ./tRead 10
+163
+
+real	0m0.024s
+user	0m0.004s
+sys	0m0.019s
+
+time ./tRead 100
+1468
+
+real	0m0.127s
+user	0m0.012s
+sys	0m0.114s
+
+time ./tRead 1000
+14518
+
+real	0m1.075s
+user	0m0.016s
+sys	0m1.057s
+
+We can observe tRead is slower than aRead on everything expect the user time which are almost the same, the increased elapsed time, is because it has a slower sys time. Which is the time that the os performs its functions, as we have a thread for each read compared to just 1 thread in the aRead, we have more threads to be completed so the system time increases
+
