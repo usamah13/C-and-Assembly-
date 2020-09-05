@@ -1,0 +1,1 @@
+One to read the value of s.y and another to read the value of s.y[i]

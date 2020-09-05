@@ -1,0 +1,1 @@
+This line of code crashes because it tells printf to print a string, using %s, but id is an int. Therefore it tries to interpret the number as a string (a pointer to characters) and crashes by accessing invalid memory.

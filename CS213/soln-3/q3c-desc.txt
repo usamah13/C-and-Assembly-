@@ -1,0 +1,1 @@
+One to read the value of s.z and one to read the value of s.z->x[i]

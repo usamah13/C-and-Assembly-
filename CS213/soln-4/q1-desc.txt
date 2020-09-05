@@ -1,0 +1,19 @@
+Here's the code:
+  v0 = a->x[i];
+  v1 = a->b.y[i];
+  v2 = a->b.a->x[i];
+  a->b.a = a;
+  v3 = a->b.a->b.y[i];
+
+Reads:
+	i
+	a
+	a->x
+	a->x[i]
+	a->b.y[i]
+	a->b.a
+	a->b.a->x
+	a->b.a->x[i]
+
+Writes:
+	v0, v1, v2, v3, and a->b.a

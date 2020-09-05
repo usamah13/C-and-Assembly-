@@ -1,0 +1,1 @@
+The base address of s.x is static and thus the only read is for the value of s.x[i]

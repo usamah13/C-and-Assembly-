@@ -1,0 +1,1 @@
+One to read the value of s.z, one for s.z->z, one for s.z->z->y and one for s.z->z->y[i].
