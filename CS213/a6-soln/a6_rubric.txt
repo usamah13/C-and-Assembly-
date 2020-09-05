@@ -1,0 +1,36 @@
+cpu [6]
+	+1 br
+	+1 beq
+	+1 bgt
+	+1 gpc
+	+1 j static
+	+1 j ind b+o
+
+q2 [10]
+	+5 has a loop with some errors
+	+2 has loop with only a few errors
+
+q3 [20]
+	+2 computes average for 1 student
+	+2 computes average for 2 students
+	+4 swaps 2 students
+	+4 sorts 3 students
+	+4 sorts 7 students
+	+3 computes median
+	+2 uses the variable s for the base of the array
+
+q4a [10]
+	+3 for good, high-level comments in .s file
+	+7 for correct C
+	-1 for one small error
+	+3 for correct add and one correct call to add, but otherwise incorrect
+
+a4b [10]
+	+2 for good, high-level comments in .s file
+	+2 for f correct procedure and procedure call
+	+2 for correct loop in main
+	+2 for correct loop in f
+	+2 for correct if statement
+
+
+	
